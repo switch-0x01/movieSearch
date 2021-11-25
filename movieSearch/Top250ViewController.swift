@@ -13,7 +13,6 @@ class Top250ViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var table: UITableView!
     var isTop250: Bool = true
     var movies: [TopMovie] = []
-    var x = DataLoader()
     
     override func viewDidLoad() {
         super.viewDidLoad()

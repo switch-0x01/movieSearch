@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		571B468927012AB100D1D120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571B468827012AB100D1D120 /* AppDelegate.swift */; };
 		571B468B27012AB100D1D120 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571B468A27012AB100D1D120 /* SceneDelegate.swift */; };
-		571B468D27012AB100D1D120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571B468C27012AB100D1D120 /* ViewController.swift */; };
+		571B468D27012AB100D1D120 /* MovieSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571B468C27012AB100D1D120 /* MovieSearchViewController.swift */; };
 		571B469027012AB100D1D120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571B468E27012AB100D1D120 /* Main.storyboard */; };
 		571B469227012AB700D1D120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571B469127012AB700D1D120 /* Assets.xcassets */; };
 		571B469527012AB700D1D120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571B469327012AB700D1D120 /* LaunchScreen.storyboard */; };
@@ -55,7 +55,7 @@
 		571B468527012AB100D1D120 /* movieSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movieSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571B468827012AB100D1D120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		571B468A27012AB100D1D120 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		571B468C27012AB100D1D120 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		571B468C27012AB100D1D120 /* MovieSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewController.swift; sourceTree = "<group>"; };
 		571B468F27012AB100D1D120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		571B469127012AB700D1D120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571B469427012AB700D1D120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 				571B46B82701370500D1D120 /* MovieTableViewCell.swift */,
 				571B468827012AB100D1D120 /* AppDelegate.swift */,
 				571B468A27012AB100D1D120 /* SceneDelegate.swift */,
-				571B468C27012AB100D1D120 /* ViewController.swift */,
+				571B468C27012AB100D1D120 /* MovieSearchViewController.swift */,
 				571B470227039E1000D1D120 /* Top250ViewController.swift */,
 				57FA12B9270679B7009C4286 /* RandomMovieViewController.swift */,
 				57FA12BB270698D5009C4286 /* RandomMovieTableViewCell.swift */,
@@ -374,7 +374,7 @@
 				57FA12B727066EE3009C4286 /* TopMovieTableViewCell.swift in Sources */,
 				57FA12BA270679B7009C4286 /* RandomMovieViewController.swift in Sources */,
 				57FA12C0270699B2009C4286 /* Types.swift in Sources */,
-				571B468D27012AB100D1D120 /* ViewController.swift in Sources */,
+				571B468D27012AB100D1D120 /* MovieSearchViewController.swift in Sources */,
 				571B470027023DB400D1D120 /*   StartScreenViewController.swift in Sources */,
 				571B468927012AB100D1D120 /* AppDelegate.swift in Sources */,
 				57D2B258271656AF009621EC /* DataLoader.swift in Sources */,

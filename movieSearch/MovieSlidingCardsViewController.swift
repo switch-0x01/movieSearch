@@ -54,9 +54,6 @@ class MovieSlidingCardsViewController: UIViewController, CardSliderDataSource {
                     Year: \(self.movies[i].year)
                     Rating: \(self.movies[i].imDBRating)
                 """))
-            if i == 1 {
-                movieData[i].image = UIImage(named: "godfather")!
-            }
         }
         }
         } while movies.count == 0
