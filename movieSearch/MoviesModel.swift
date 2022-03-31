@@ -1,5 +1,5 @@
 //
-//  Types.swift
+//  MoviesModel.swift
 //  movieSearch
 //
 //  Created by Switch on 01.10.2021.
@@ -17,7 +17,7 @@ struct MovieItem: CardSliderItem {
     var description: String?
 }
 
-// parse JSON for search movies
+// JSON structs for search movies
 
 struct MovieResult: Codable {
     let search: [Movie]
@@ -40,7 +40,7 @@ struct Movie: Codable {
 }
 
 
-// parse JSON for TOP 250
+//  JSON structs for TOP 250
 
 struct TopMovieResult: Codable {
     let items: [TopMovie]

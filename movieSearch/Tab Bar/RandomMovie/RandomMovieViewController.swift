@@ -22,17 +22,11 @@ class RandomMovieViewController: Top250ViewController {
         newTable.delegate = self
         navigationController?.isNavigationBarHidden = true
         fillTableWithMovies(table: newTable)
-        
-        
     }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if movies.count > 0 {
             return 1
-        } else {
-            return movies.count
-        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,16 +54,4 @@ class RandomMovieViewController: Top250ViewController {
             self.newTable.reloadData()
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
