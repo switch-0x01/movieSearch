@@ -27,10 +27,10 @@ class Top250ViewController: UIViewController {
     }
     
     func fillTableWithMovies(table: UITableView) {
-      networkManager.fetchMoviesTOP250 { result in
+      networkManager.fetchMoviesTOP250 { [weak self] result in
         switch result {
         case .success(let movies):
-          self.movies.append(contentsOf: movies)
+          self?.movies.append(contentsOf: movies)
           DispatchQueue.main.async {
             table.reloadData()
           }

@@ -31,11 +31,11 @@ class MovieSlidingCardsViewController: UIViewController, CardSliderDataSource {
   }
   
   func createCards() {
-    networkManager.fetchMoviesTOP250 { result in
+    networkManager.fetchMoviesTOP250 { [weak self] result in
       switch result {
       case .success(let movies):
-        self.topMovies.append(contentsOf: movies)
-        self.configure(with: self.topMovies)
+        self?.topMovies.append(contentsOf: movies)
+        self?.configure(with: self?.topMovies ?? [])
       case .failure(let error):
         print("Error: \(String(describing: error.localizedDescription))")
       }

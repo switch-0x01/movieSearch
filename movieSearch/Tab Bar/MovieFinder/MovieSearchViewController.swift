@@ -35,12 +35,12 @@ class MovieSearchViewController: UIViewController {
         let query = text.replacingOccurrences(of: " ", with: "%20")
         movies.removeAll()
       
-      networkManager.fetchMoviesForSearch(query: query) { result in
+      networkManager.fetchMoviesForSearch(query: query) { [weak self] result in
         switch result {
         case .success(let movies):
-          self.movies.append(contentsOf: movies)
+          self?.movies.append(contentsOf: movies)
           DispatchQueue.main.async {
-            self.table.reloadData()
+            self?.table.reloadData()
           }
         case .failure(let error):
           print("Error: \(error)")
