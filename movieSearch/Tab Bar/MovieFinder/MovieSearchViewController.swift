@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class MovieSearchViewController: UIViewController, UITextFieldDelegate {
+class MovieSearchViewController: UIViewController {
     
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var field: UITextField!
@@ -26,10 +26,6 @@ class MovieSearchViewController: UIViewController, UITextFieldDelegate {
         self.tabBarController?.tabBar.isHidden = false
     }
 
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        searchMovies()
-        return true
-    }
     
     func searchMovies() {
         field.resignFirstResponder()
@@ -81,3 +77,10 @@ extension MovieSearchViewController: UITableViewDataSource {
 }
 
 extension MovieSearchViewController: UITableViewDelegate {}
+
+extension MovieSearchViewController: UITextFieldDelegate {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+      searchMovies()
+      return true
+  }
+}
